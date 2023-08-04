@@ -17,6 +17,6 @@ class Solution:
 				return False
 		return True
 
-a = Solution()
-print(a.isHappy(19))  #True
-print(a.isHappy(2))  #False
+b = Solution()
+print(b.isHappy(19))  #True
+print(b.isHappy(2))  #False
