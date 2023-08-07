@@ -1,10 +1,16 @@
 class Solution:
     def shuffle(self, nums: list[int], n: int) -> list[int]:
-        new_list = []
-        for i in range(n):
-            new_list.append(nums[i])
-            new_list.append(nums[i+n])
-        return new_list
+        # new_list = []
+        # for i in range(n):
+        #     new_list.append(nums[i])
+        #     new_list.append(nums[i+n])
+        # return new_list #first method
+
+        def getResult():
+            for i in range(n):
+                yield nums[i]
+                yield nums[i+n]
+        return list(getResult()) #second method with generating
 
 a = Solution()
 
